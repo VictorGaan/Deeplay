@@ -17,7 +17,7 @@ namespace Deeplay.PersonnelRecords.Persistence.Contexts
         public DbSet<Subdivision> Subdivisions { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseLazyLoadingProxies().UseSqlServer("Data source=DESKTOP-OR7MOG3;Database=Deeplay2;Trusted_Connection=True");
+            optionsBuilder.UseLazyLoadingProxies().UseSqlServer("Data source=DESKTOP-OR7MOG3;Database=Deeplay;Trusted_Connection=True");
         }
     }
 }
